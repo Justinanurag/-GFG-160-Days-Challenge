@@ -1,10 +1,13 @@
-/*#include<iostream>
+//Approach 01 using temp array
+#include<iostream>
 #include<vector>
 using namespace std;
-//Approach 01 using temp
+
 void reverseArray(vector<int>& arr){
     int n=arr.size();
     vector<int> temp(n);
+
+    //array ke last element ko temp ke first position pe dalange
     for(int i=0;i<n;i++){
         temp[i]=arr[n-i-1];
     }
@@ -21,13 +24,13 @@ int main(){
     }
     return 0;
 
-}*/
+}
 
-//Approach 2: two pointers
-/*#include<iostream>
+//Approach 2: Two  pointers Approach
+#include<iostream>
 #include<vector>
 using namespace std;
-//Approach 01 using two pointer
+
 void reverseArray(vector<int>& arr){
     int left=0,right=arr.size()-1;
     while(left,right){
@@ -46,14 +49,13 @@ int main(){
     }
     return 0;
 
-}*/
+}
 
 
 //Approach 3 swaping each element with the last element
-/*#include<iostream>
+#include<iostream>
 #include<vector>
 using namespace std;
-//Approach 01 using two pointer
 void reverseArray(vector<int>& arr){
     int n=arr.size();
     for(int i=0;i<n/2;i++){
@@ -70,7 +72,7 @@ int main(){
     }
     return 0;
 
-}*/
+}
 
 
 //Approach 4 swaping each element with the last element
