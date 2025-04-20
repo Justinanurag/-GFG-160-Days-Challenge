@@ -5,7 +5,7 @@
 //Appro0ch 01: Brute Force Approach
 // Time Complexity: O(n^2)
 
-/*#include<iostream>
+#include<iostream>
 #include<vector>
 #include<math.h>
 using namespace std;
@@ -26,7 +26,7 @@ int main(){
     int result = maxSubArraySum(arr);
     cout << "Maximum subarray sum: " << result << endl;
     return 0;
-}*/
+}
 
 //Approach 02: Using Kadane's Algorithm
 // Time Complexity: O(n)
